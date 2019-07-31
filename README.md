@@ -31,3 +31,7 @@ Model accuracy test is based on 60-40 / 70-30 / 80-20 divison and Cross-Validati
 As you run the analysis u can easly follow the process using web-ui provided by spark in localhost. Also, one can limit the processor size and ram amount using spark-context to have variety of results under different environments. 
 
 ## Versioning
+### version 0.1
+Basic data transformation conducted. Due to the structure of spark, data to be analyzed must be imported as one colum. Therefore, for RDD implementation we used trim/concat operations to convert 1x64 data to one column data. Data is labeled as pre processed, with that we reduces the extra labling time by merging this operation with pre processing. After pre processing, multiclass Naive-Bayes machine learning method implemented and valuated using 60-40 / 73-30 / 80-20 data random split ratios. Best Accuracy is measured as %84
+### Version 0.2 
+To enhance analysis environment, we added one vs rest (OVR) machine learning approach based on Support Vector Machines. Due to Spark not having OVR Machine Learning method on RDD based brach, OVR model created from stracth. Accuracy measured using 60-40 / 73-30 / 80-20 data random split ratios. Accuracy was %100, %94, %50, %40, %30 with respect to 5 classes. Results showed us our implementation wast clever enough to classify images correctly.
