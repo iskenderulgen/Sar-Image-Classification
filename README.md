@@ -30,3 +30,4 @@ Model accuracy test is based on 60-40 / 70-30 / 80-20 divison and Cross-Validati
 ```
 As you run the analysis u can easly follow the process using web-ui provided by spark in localhost. Also, one can limit the processor size and ram amount using spark-context to have variety of results under different environments. 
 
+## Versioning
