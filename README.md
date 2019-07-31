@@ -11,10 +11,20 @@ These instructions will get you a copy of the project up and running on your loc
 Things you need to install the software 
 
 ```
-Apache Spark (Current Version is 2.4.3)
-Java Development Kit (Spark supports Java 8 At the moment)
-winutils.exe (For windows based environment, Spark needs hadoop winutils file)
-Least 16gb ram for better performance
+- Apache Spark (Current Version is 2.4.3)
+- Java Development Kit (Spark supports Java 8 At the moment)
+- winutils.exe (For windows based environment, Spark needs hadoop winutils file)
+- Least 16gb ram for better performance
 ```
 ### Installing
+
+For java development environment, IntelliJ IDEA would be good choise for starters. If u are student, u can freely get a copy with your school email. After u set up IDE, import Java 8 development environment to your project and then import Spark 2.4.3 bins in to same project folder. After setting all the environments
+
+```
+- Create a spark context and spark session objects.
+- import dataset to be analyzed.
+```
+### Running the tests
+
+As u run the analysis u can easly follow the process using web-ui provided by spark in localhost. Also, one can limit the processor size and ram amount using spark-context to have variety of results under different environments. 
 
